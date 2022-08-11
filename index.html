@@ -7,15 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets/grid.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
   <title>Pet Clinic</title>
 </head>
 
 <body>
   <div class="header">
+
     <div class="header-nav">
-      <div class="header-logo"><img src="images/logoCvG.jpg" alt="">
+      <div class="header-logo"><img src="images/logoCvG.jpg" alt="" class="logo">
         <div class="solgan">
           <p class="sologan-text">3 BOYS</p>
           <p class="sologan-text">Pet Clinic</p>
@@ -29,6 +30,7 @@
   </div>
 
   <div class="container">
+
     <div class="intro">
       <p class="hospitalName">TƯ VẤN THÚ Y TRỰC TUYẾN 3 BOYS</p>
       <button class="btn btn-care">ĐĂNG KÝ GÓI CHĂM SÓC</button>
@@ -201,10 +203,11 @@
           <h4>Đăng ký lịch khám & chuẩn đoán bệnh miễn phí</h4>
 
           <div class="appointment-form">
-            <form id="form" action="" method="post" name="myForm" onsubmit="return(validateForm());">
+            <form id="form" action="" method="post" name="myForm" onsubmit="return validateForm()">
               <div class="form-col2">
-                <input type="text" id="name" class="info" name="name" placeholder="Họ tên">
-                <input type="text" id="tel" class="info" name="tel" placeholder="Số điện thoại">
+                <input type="text" id="name" onchange="checkOnchange()" class="info" name="name" placeholder="Họ tên">
+                <input type="tel" id="tel" class="info" name="tel" placeholder="Số điện thoại"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
               </div>
 
               <div class="form-col2">
@@ -222,68 +225,84 @@
 
               <textarea name="note" id="note" cols="80" rows="10" class="info"
                 placeholder="Lý do khám, tình trạng thú cưng của bạn"></textarea>
-              <button class="btn" type="submit" value="Submit" >Gửi thông tin</button>
+              <button class="btn" type="submit" value="Submit">Gửi thông tin</button>
             </form>
           </div>
         </div>
       </div>
     </div>
 
+    <div class="box">
+      <div class="box-header">
+        <img src="images/logoCvG.jpg" alt="" class="logo">
+        <p class="exit">-</p>
+      </div>
+      <h3>Chat với 3Boys - Phòng khám Pet Clinic</h3>
+      <P class="text">Hi! can we help you?</P>
+      <button class="btn-chat">Bắt đầu chat</button>
+    </div>
+    <div class="contact">
+      <a href="" class="d"><img src="images/zalo.png" alt="" class="contact-img nth1"></a>
+      <img src="images/mess.png" id="mess" alt="" class="contact-img">
+    </div>
+
   </div>
   <div class="footer">
     <div class="row grid wide footer-content">
-        <div class=" col c-4 m-4 l-4">
-            <h3>THÔNG TIN LIÊN HỆ</h3>
-            <P>Phòng khám Pet Clinic 3 Boys</P>
-            <div class="info-cty" >
-                <div class="" style="margin:8px">
-                    <i class="fas fa-map-marker-alt icon-width" style="min-width: 30px"></i>Bình Mỹ / Củ Chi / TPHCM
-                </div>
+      <div class=" col c-4 m-4 l-4">
+        <h3>THÔNG TIN LIÊN HỆ</h3>
+        <P>Phòng khám 3 Boys Pet Clinic</P>
+        <div class="info-cty">
+          <div class="" style="margin:8px">
+            <i class="fas fa-map-marker-alt icon-width" style="min-width: 30px"></i>Bình Mỹ / Củ Chi / TPHCM
+          </div>
 
-                <div class="footer-info-detail" style="margin:8px">
-                    <i class="fas fa-envelope icon-width" style="min-width: 30px"></i>laptopCvG@gmail.com
-                </div>
-                <div class="footer-info-detail" style="margin:8px">
-                    <i class="fas fa-phone-alt  icon-width" style="min-width: 30px"></i>0384319201
-                </div>
-                <div class="footer-info-detail" style="margin:8px">
-                    <i class="fas fa-clock icon-width" style="min-width: 30px"></i>Thời gian làm việc: 7h:30 - 22h (Thứ 2 - Chủ nhật)
-                </div>
-            </div>
-
-        </div>
-        <div class="col c-4 m-4 l-4">
-            <h3>TRUY CẬP NHANH</h3>
-            <div class="info-cty">
-                <div class="footer-info-detail"  style="margin:8px">
-                    <i class="fas fa-arrow-right icon-width" style="min-width: 30px"></i><a href="index.html">Trang chủ</a>
-                </div>
-                <div class="footer-info-detail" style="margin:8px">
-                    <i class="fas fa-arrow-right icon-width" style="min-width: 30px"></i><a>Liên hệ</a>
-                </div>
-            </div>
-
+          <div class="footer-info-detail" style="margin:8px">
+            <i class="fas fa-envelope icon-width" style="min-width: 30px"></i>petclinic@gmail.com
+          </div>
+          <div class="footer-info-detail" style="margin:8px">
+            <i class="fas fa-phone-alt  icon-width" style="min-width: 30px"></i>0384319201
+          </div>
+          <div class="footer-info-detail" style="margin:8px">
+            <i class="fas fa-clock icon-width" style="min-width: 30px"></i>Thời gian làm việc: 7h:30 - 22h (Thứ 2 - Chủ
+            nhật)
+          </div>
         </div>
 
-        <div class=" col c-4 m-4 l-4">
-            <h3>FOLLOW US</h3>
-            <div class="info-cty">
-                <div class="footer-info-detail" style="margin:8px">
-                    <i class="fab fa-facebook icon-width" style="min-width: 30px"></i><a href= "https://www.facebook.com/nguyenvanhien0506/"></i>Facebook</a>
-                </div>
-
-                <div class="footer-info-detail" style="margin:8px">
-                    <i class="fab fa-youtube icon-width" style="min-width: 30px"></i><a href="" >Youtube</a>
-                </div>
-
-                <div class="footer-info-detail" style="margin:8px">
-                    <i class="fab fa-instagram-square icon-width" style="min-width: 30px"></i><a href="">Instagram</a>
-                </div>
-            </div>
-
+      </div>
+      <div class="col c-4 m-4 l-4">
+        <h3>TRUY CẬP NHANH</h3>
+        <div class="info-cty">
+          <div class="footer-info-detail" style="margin:8px">
+            <i class="fas fa-arrow-right icon-width" style="min-width: 30px"></i><a href="index.html">Trang chủ</a>
+          </div>
+          <div class="footer-info-detail" style="margin:8px">
+            <i class="fas fa-arrow-right icon-width" style="min-width: 30px"></i><a>Liên hệ</a>
+          </div>
         </div>
+
+      </div>
+
+      <div class=" col c-4 m-4 l-4">
+        <h3>FOLLOW US</h3>
+        <div class="info-cty">
+          <div class="footer-info-detail" style="margin:8px">
+            <i class="fab fa-facebook icon-width" style="min-width: 30px"></i><a
+              href="https://www.facebook.com/nguyenvanhien0506/"></i>Facebook</a>
+          </div>
+
+          <div class="footer-info-detail" style="margin:8px">
+            <i class="fab fa-youtube icon-width" style="min-width: 30px"></i><a href="">Youtube</a>
+          </div>
+
+          <div class="footer-info-detail" style="margin:8px">
+            <i class="fab fa-instagram-square icon-width" style="min-width: 30px"></i><a href="">Instagram</a>
+          </div>
+        </div>
+
+      </div>
     </div>
-</div>
+  </div>
 
   <script language="JavaScript" src="index.js"></script>
 </body>

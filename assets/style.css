@@ -27,7 +27,7 @@
     padding: 10px;
 }
 
-.header-logo img {
+.logo {
     max-height: 70px;
     border-radius: 50%;
 }
@@ -73,6 +73,63 @@
 
 }
 
+.contact-img{
+    position:fixed;
+    z-index: 1;
+    right: 20px;
+    bottom: 50px;
+    border-radius: 50%;
+    height: 80px;
+    cursor: pointer;
+}
+.contact .nth1{
+    bottom: 150px;
+}
+.box{
+
+    min-height: 450px;
+    width: 400px;
+    text-align: center;
+    
+    z-index: 2;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-left:20%;
+    
+}
+.active{
+    display: block;
+}
+.box-header{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom: 100px;
+    
+}
+
+.exit{
+    font-size: 80px;
+    cursor: pointer;
+    line-height: 70px;
+    width: 70px;
+    border-radius: 50%;
+
+}
+.exit:hover{
+    background-color: rgba(43, 37, 37, 0.123);
+}
+.btn-chat{
+    border: none;
+    background-color:#0876d5;
+    color: #fff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 100px;
+}
 .container {
    
 }
