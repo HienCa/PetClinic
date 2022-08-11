@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0.5px 0.5px;
+}
+.text{
+    font-size: 20px;
+    margin-top:20px;
+    margin-bottom:20px;
+
+}
+.header-nav {
+    max-height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 10px;
+}
+
+.header-logo img {
+    max-height: 70px;
+    border-radius: 50%;
+}
+
+.solgan {
+    display: inline-block;
+    line-height: 30px;
+    color: #1ab7fa;
+    font-weight: 900;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.btn {
+    padding: 20px;
+    min-width: 300px;
+    background-color: #faa61a;
+    border: 2px solid #faa61a;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    Font-weight: bold;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.btn-style {
+    background-color: #fff;
+    border: 2px solid #faa61a;
+    color: #faa61a;
+    min-width: 300px;
+}
+
+.btn:hover:first-child {
+    background-color: #fa771a;
+    cursor: pointer;
+}
+
+.btn:hover:nth-child(2) {
+    background-color: #faa61a;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.container {
+   
+}
+
+.intro {
+    background: url("../images/meomeo.jpg") no-repeat center center fixed;
+    min-height: 700px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    text-shadow: 1px 1px;
+}
+
+.hospitalName {
+    color: #fff;
+    font-weight: 900;
+    font-size: 30px;
+    margin-top: 70;
+    position: absolute;
+    margin-top: 350px;
+
+}
+
+.btn-care {
+    min-width: 400px;
+    position: absolute;
+    margin-top: 500px;
+}
+.container .btn-care:hover {
+    background-color: #fa771a;
+    cursor: pointer;
+}
+.advise{
+    min-height: 500px;
+    padding: 150px;
+}
+h2{
+    Font-weight: bold;
+    font-weight: 700;
+    font-size: 25px;
+    border-bottom: 5px solid #fa771a;
+   
+    
+}
+
+.teams-group{
+    background: url("../images/maomao.jpg") no-repeat center center fixed;
+    min-height: 600px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    padding: 150px;
+}
+.teams-info{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.member-info{
+    text-align: center;
+    background-color: #fff;
+    color: #000;padding: 30px;
+    border-radius: 30px;
+    margin-bottom: 70px;
+}
+.member-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-top:50px;
+}
+.member-name{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.member-pos{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.teams-experience{
+    margin:150px;
+}
+.experience{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-khamcun{
+    border-radius: 10px;
+}
+.ex-de{
+    display: flex;
+    margin-left: 20px;
+}
+.ex-des-item{
+    border: 2px solid #faa61a;;
+    border-radius: 10px;
+    display: flex;
+    max-width: 700px;
+    margin-bottom: 20px; 
+}
+.ex-des-item:last-child{
+    margin-bottom: 0;
+}
+.pet-icon{
+    padding: 30px;
+    max-width: 80px
+}
+
+.appointment{
+    margin: 150px;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+.apppointment-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+.apppointment-content img{
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+.appointment-form .info{
+    min-width: 360px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    outline: 1px solid #faa61a;
+}
+.form-col2{
+    display: flex;
+    justify-content: space-between;
+}
+h4{
+    color: #faa61a;
+    margin-bottom: 20px;
+    font-size: 35px
+}
+
+.footer{
+    background-color:rgb(3, 15, 23);
+    padding: 16px 0px;
+    color: #fff;
+   
+}
+.info-cty{
+    margin-top: 16px;
+}
+.info-cty a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+.info-cty .info-detail{
+    margin-top: 8px;
+    color:#fff;
+}
+.icon-width{
+    min-width: 24px;
+}
+.showAllProduct{
+    display: inline-block;
+    background-color: #25304b;
+    padding: 22px;
+    color: #fff;
+    border: 1px solid green;         
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+.footer-info-detail:hover{
+    cursor: pointer;
+}
+
+
+
