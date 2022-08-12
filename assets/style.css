@@ -86,20 +86,26 @@
     bottom: 150px;
 }
 .box{
-
+    display: none;
     min-height: 450px;
     width: 400px;
     text-align: center;
-    
-    z-index: 2;
+    right: 60px;
     padding: 20px;
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    margin-left:20%;
-    
+    position: fixed;
+    z-index: 1;
+    right: 100px;
+    bottom: 50px;
+    background-color: #fff;
+ 
 }
 .active{
     display: block;
+}
+.hide{
+    display: none;
 }
 .box-header{
     display: flex;
@@ -240,13 +246,14 @@ h2{
     display: flex;
     max-width: 700px;
     margin-bottom: 20px; 
+    
 }
 .ex-des-item:last-child{
     margin-bottom: 0;
 }
 .pet-icon{
-    padding: 30px;
-    max-width: 80px
+    padding: 20px;
+    max-width: 100px
 }
 
 .appointment{
@@ -319,5 +326,14 @@ h4{
     cursor: pointer;
 }
 
+
+#slideCont {
+    border:solid 1px #000;
+    text-align:center;
+    }
+    
+    #slideCont img {
+    margin: 5px;
+    }
 
 
