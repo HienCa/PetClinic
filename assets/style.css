@@ -10,13 +10,14 @@
     left: 0;
     z-index: 1;
     background-color: #fff;
-    box-shadow: 0.5px 0.5px;
+   
+    
 }
 .text{
     font-size: 20px;
     margin-top:20px;
     margin-bottom:20px;
-
+    
 }
 .header-nav {
     max-height: 100px;
@@ -62,8 +63,9 @@
 }
 
 .btn:hover:first-child {
-    background-color: #fa771a;
+    background-color:  #fa771a;
     cursor: pointer;
+    color: #fff;
 }
 
 .btn:hover:nth-child(2) {
@@ -137,7 +139,8 @@
     margin-top: 100px;
 }
 .container {
-   
+    position: relative;
+    margin-top: 100px;
 }
 
 .intro {
@@ -164,7 +167,11 @@
     margin-top: 350px;
 
 }
-
+.icon{
+    min-width: 50px;
+    color: #fa771a;
+    font-size: 30px;
+}
 .btn-care {
     min-width: 400px;
     position: absolute;
@@ -178,12 +185,36 @@
     min-height: 500px;
     padding: 150px;
 }
+.services{
+    padding:150px;
+    margin-top: -200px;
+}
+.service-group{
+    display: flex;
+    justify-content:space-between;
+    
+}
+.service-item h3{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+.service-group .img{
+    min-height:400px;
+    width: 400px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.service-item{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 h2{
     Font-weight: bold;
     font-weight: 700;
     font-size: 25px;
     border-bottom: 5px solid #fa771a;
-   
+   padding-bottom: 10px;
     
 }
 
@@ -254,8 +285,42 @@ h2{
 .pet-icon{
     padding: 20px;
     max-width: 100px
+
+}
+.package-register{
+    padding: 0px 150px;
+}
+.packages{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.package{
+    box-shadow: rgba(18, 18, 228, 0.2) 0px 7px 29px 0px;
+    padding: 40px;
+    max-width: 500px;
+    border-radius: 20px;
+
+}
+.package p{
+    text-align: center;
+    border-bottom:1px solid #ccc;
 }
 
+.package h3{
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+
+}
+.package .price{
+    font-size: 30px;
+    font-weight: 700;
+    border:none;
+}
+.btn-register{
+    width: 100%;
+}
 .appointment{
     margin: 150px;
     margin-bottom: 50px;
