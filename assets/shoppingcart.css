@@ -1,0 +1,55 @@
+h1{
+    text-align: center;
+    
+}
+td{
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+}
+.icon{
+    font-size: 40px;
+}
+.icon:hover{
+    color: #fa771a;
+    cursor: pointer;
+}
+.col-head{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.col-img img{
+    max-width: 200px;
+    height: 200px;
+}
+.col-content{
+    max-width: 600px;
+}
+.col-price{
+    color: red;
+    min-width: 100px;
+    text-align: center;
+}
+.col-quantiy{
+    width: 50px;
+}
+.Subtotal{
+    font-size: 20px;
+    font-weight:700;
+    text-align: center;
+}
+.btn{
+    background-color: #fa771a;
+    border:none;
+    padding: 15px;
+    min-width: 400px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    Font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    float: right;
+}

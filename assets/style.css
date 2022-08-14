@@ -3,22 +3,25 @@
     margin: 0;
     box-sizing: border-box;
 }
-.header{
+
+.header {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1;
     background-color: #fff;
-   
-    
+
+
 }
-.text{
+
+.text {
     font-size: 20px;
-    margin-top:20px;
-    margin-bottom:20px;
-    
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
+
 .header-nav {
     max-height: 100px;
     width: 100%;
@@ -32,7 +35,10 @@
     max-height: 70px;
     border-radius: 50%;
 }
-
+.text-slogan{
+    color: #fff;
+    font-size: 30px;
+}
 .solgan {
     display: inline-block;
     line-height: 30px;
@@ -63,7 +69,7 @@
 }
 
 .btn:hover:first-child {
-    background-color:  #fa771a;
+    background-color: #fa771a;
     cursor: pointer;
     color: #fff;
 }
@@ -75,8 +81,8 @@
 
 }
 
-.contact-img{
-    position:fixed;
+.contact-img {
+    position: fixed;
     z-index: 1;
     right: 20px;
     bottom: 50px;
@@ -84,10 +90,12 @@
     height: 80px;
     cursor: pointer;
 }
-.contact .nth1{
+
+.contact .nth1 {
     bottom: 150px;
 }
-.box{
+
+.box {
     display: none;
     min-height: 450px;
     width: 400px;
@@ -101,23 +109,26 @@
     right: 100px;
     bottom: 50px;
     background-color: #fff;
- 
-}
-.active{
-    display: block;
-}
-.hide{
-    display: none;
-}
-.box-header{
-    display: flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom: 100px;
-    
+
 }
 
-.exit{
+.active {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+
+}
+
+.exit {
     font-size: 80px;
     cursor: pointer;
     line-height: 70px;
@@ -125,12 +136,14 @@
     border-radius: 50%;
 
 }
-.exit:hover{
+
+.exit:hover {
     background-color: rgba(43, 37, 37, 0.123);
 }
-.btn-chat{
+
+.btn-chat {
     border: none;
-    background-color:#0876d5;
+    background-color: #0876d5;
     color: #fff;
     padding: 20px;
     width: 300px;
@@ -138,6 +151,7 @@
     cursor: pointer;
     margin-top: 100px;
 }
+
 .container {
     position: relative;
     margin-top: 100px;
@@ -167,58 +181,77 @@
     margin-top: 350px;
 
 }
-.icon{
+
+.icon {
     min-width: 50px;
     color: #fa771a;
     font-size: 30px;
 }
+
 .btn-care {
     min-width: 400px;
     position: absolute;
     margin-top: 500px;
 }
+
 .container .btn-care:hover {
     background-color: #fa771a;
     cursor: pointer;
 }
-.advise{
+
+.advise {
     min-height: 500px;
-    padding: 150px;
+    margin: 150px;
 }
-.services{
-    padding:150px;
+
+.services {
     margin-top: -200px;
+    margin: 150px;
+
 }
-.service-group{
+
+.service-group {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     
 }
-.service-item h3{
+
+.service-item h3 {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
     color: rgb(0, 0, 0);
 }
-.service-group .img{
-    min-height:400px;
+
+.service-group .img {
+    min-height: 400px;
     width: 400px;
+    text-align: center;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-.service-item{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-left: 20px;
 }
 
-h2{
-    Font-weight: bold;
-    font-weight: 700;
-    font-size: 25px;
-    border-bottom: 5px solid #fa771a;
-   padding-bottom: 10px;
+.service-item {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     
 }
+.service-item p{
+    padding: 20px;
+}
+.service-item .text{
+    min-width: 200px;
+}
+h2 {
+    Font-weight: bold;
+    font-weight: 800;
+    font-size: 30px;
+    border-bottom: 5px solid #fa771a;
+    padding-bottom: 10px;
+    text-align: center;
 
-.teams-group{
+}
+
+.teams-group {
     background: url("../images/maomao.jpg") no-repeat center center fixed;
     min-height: 600px;
     -webkit-background-size: cover;
@@ -228,117 +261,140 @@ h2{
     color: #fff;
     padding: 150px;
 }
-.teams-info{
-    display:flex;
+
+.teams-info {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
-.member-info{
+
+.member-info {
     text-align: center;
     background-color: #fff;
-    color: #000;padding: 30px;
+    color: #000;
+    padding: 30px;
     border-radius: 30px;
     margin-bottom: 70px;
 }
-.member-img{
+
+.member-img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    margin-top:50px;
+    margin-top: 50px;
 }
-.member-name{
+
+.member-name {
     margin-top: 10px;
     font-size: 20px;
     font-weight: 700;
 }
-.member-pos{
+
+.member-pos {
     margin-top: 10px;
     font-size: 20px;
 }
-.teams-experience{
-    margin:150px;
+
+.teams-experience {
+    margin: 150px;
 }
-.experience{
+
+.experience {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.img-khamcun{
+
+.img-khamcun {
     border-radius: 10px;
 }
-.ex-de{
+
+.ex-de {
     display: flex;
     margin-left: 20px;
 }
-.ex-des-item{
-    border: 2px solid #faa61a;;
+
+.ex-des-item {
+    border: 2px solid #faa61a;
+    ;
     border-radius: 10px;
     display: flex;
     max-width: 700px;
-    margin-bottom: 20px; 
-    
-}
-.ex-des-item:last-child{
-    margin-bottom: 0;
-}
-.pet-icon{
-    padding: 20px;
-    max-width: 100px
+    margin-bottom: 20px;
 
 }
-.package-register{
+
+.ex-des-item:last-child {
+    margin-bottom: 0;
+}
+
+.pet-icon {
+    padding: 20px;
+    max-width: 100px
+}
+
+.package-register {
     padding: 0px 150px;
 }
-.packages{
-    display:flex;
+
+.packages {
+    display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.package{
+
+.package {
     box-shadow: rgba(18, 18, 228, 0.2) 0px 7px 29px 0px;
     padding: 40px;
     max-width: 500px;
     border-radius: 20px;
 
 }
-.package p{
+
+.package p {
     text-align: center;
-    border-bottom:1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 
-.package h3{
+.package h3 {
     font-size: 30px;
     font-weight: 900;
     text-align: center;
 
 }
-.package .price{
+
+.package .price {
     font-size: 30px;
     font-weight: 700;
-    border:none;
+    border: none;
 }
-.btn-register{
+
+.btn-register {
     width: 100%;
 }
-.appointment{
+
+.appointment {
     margin: 150px;
     margin-bottom: 50px;
     font-size: 25px;
 }
-.apppointment-content{
+
+.apppointment-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 40px;
 }
-.apppointment-content img{
+
+.apppointment-content img {
     width: 600px;
     height: 600px;
     border-radius: 10px;
     margin-right: 50px;
 }
-.appointment-form .info{
+
+.appointment-form .info {
     min-width: 360px;
     padding: 20px;
     border-radius: 10px;
@@ -346,52 +402,55 @@ h2{
     margin-bottom: 20px;
     outline: 1px solid #faa61a;
 }
-.form-col2{
+
+.form-col2 {
     display: flex;
     justify-content: space-between;
 }
-h4{
+
+h4 {
     color: #faa61a;
     margin-bottom: 20px;
     font-size: 35px
 }
 
-.footer{
-    background-color:rgb(3, 15, 23);
+.footer {
+    background-color: rgb(3, 15, 23);
     padding: 16px 0px;
     color: #fff;
-   
+
 }
-.info-cty{
+
+.info-cty {
     margin-top: 16px;
 }
-.info-cty a{
+
+.info-cty a {
     display: inline-block;
     text-decoration: none;
     color: #fff;
 }
-.info-cty .info-detail{
+
+.info-cty .info-detail {
     margin-top: 8px;
-    color:#fff;
+    color: #fff;
 }
-.icon-width{
+
+.icon-width {
     min-width: 24px;
 }
-.showAllProduct{
+
+.showAllProduct {
     display: inline-block;
     background-color: #25304b;
     padding: 22px;
     color: #fff;
-    border: 1px solid green;         
+    border: 1px solid green;
     font-weight: bold;
     cursor: pointer;
     width: 100%;
 }
-.footer-info-detail:hover{
+
+.footer-info-detail:hover {
     cursor: pointer;
 }
-
-
-
-
-
