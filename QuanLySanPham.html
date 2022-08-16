@@ -35,9 +35,7 @@
                 <td class="row-item  center">200.000 đ</td>
                 <td class="row-item  center">1000</td>
                 <td class="row-item  center">
-                    <form action="" method="post">
-                        <button class="sub-btn">UPDATE</button>
-                    </form>
+                    <a href="#"><button class="sub-btn update-btn">UPDATE</button></a>
                     <button class="sub-btn" style="margin-top:10px;">DELETE</button>
                 </td>
 
@@ -50,7 +48,7 @@
                 <td class="row-item  center">200.000 đ</td>
                 <td class="row-item  center">1000</td>
                 <td class="row-item  center">
-                    <button class="sub-btn">UPDATE</button>
+                    <a href="#"><button class="sub-btn update-btn">UPDATE</button></a>
                     <button class="sub-btn" style="margin-top:10px;">DELETE</button>
                 </td>
 
@@ -63,7 +61,7 @@
                 <td class="row-item  center">200.000 đ</td>
                 <td class="row-item  center">1000</td>
                 <td class="row-item  center">
-                    <button class="sub-btn">UPDATE</button>
+                    <a href="#"><button class="sub-btn update-btn">UPDATE</button></a>
                     <button class="sub-btn" style="margin-top:10px;">DELETE</button>
                 </td>
 
@@ -76,7 +74,7 @@
                 <td class="row-item  center">200.000 đ</td>
                 <td class="row-item  center">1000</td>
                 <td class="row-item  center">
-                    <button class="sub-btn">UPDATE</button>
+                    <a href="#"><button class="sub-btn update-btn">UPDATE</button></a>
                     <button class="sub-btn" style="margin-top:10px;">DELETE</button>
                 </td>
 
@@ -90,7 +88,7 @@
                 <td class="row-item  center">200.000 đ</td>
                 <td class="row-item  center">1000</td>
                 <td class="row-item  center">
-                    <button class="sub-btn">UPDATE</button>
+                    <a href="#"><button class="sub-btn update-btn">UPDATE</button></a>
                     <button class="sub-btn" style="margin-top:10px;">DELETE</button>
                 </td>
 
@@ -101,7 +99,7 @@
 
 
     </div>
-    <div class="add-product" id="add-product">
+    <div class="add-product " id="add-product">
         <form action="#" method="post">
 
         </form>
@@ -118,7 +116,7 @@
                 </select>
                 <input class="input-style" placeholder="GIÁ" name="gia"></input>
                 <input class="input-style" type="file" placeholder="Hình ảnh" name="image"></input>
-               
+
 
             </div>
             <div class="item">
@@ -135,9 +133,48 @@
                 </select>
             </div>
         </div>
-        
 
-        <button class="btn" id="sub-btn">ADD PRODUCT</button>
+
+        <button class="btn" id="add-btn">ADD PRODUCT</button>
+    </div>
+
+    <div class="up-product" id="up-product">
+        <form action="#" method="post">
+
+        </form>
+        <div class="content">
+            <div class="item">
+                <input class="input-style" placeholder="Tên Sản Phẩm" name="tensp"></input>
+                <select class="input-style" name="dvt" id="">
+                    <option value="" style="font-weight:900">ĐƠN VỊ TÍNH</option>
+                    <option value="1">Cái / Bịch</option>
+                    <option value="2">Thùng</option>
+                    <option value="3">Hộp</option>
+                    <option value="4">Liều uống</option>
+
+                </select>
+                <input class="input-style" placeholder="GIÁ" name="gia"></input>
+                <input class="input-style" type="file" placeholder="Hình ảnh" name="image"></input>
+
+
+            </div>
+            <div class="item">
+                <input class="input-style" placeholder="Số Lượng" name="soluong"></input>
+                <input class="input-style" placeholder="Mô Tả" name="mota"></input>
+                <input class="input-style" placeholder="Nước Sản Xuất" name="nuocsx"></input>
+                <select class="input-style" name="maloai" id="">
+                    <option value="" style="font-weight:900">CHỌN LOẠI SẢN PHẨM</option>
+                    <option value="1">Thức Ăn</option>
+                    <option value="2">Túi đựng Pet</option>
+                    <option value="3">Thuốc</option>
+                    <option value="4">Đồ chơi cho Pet</option>
+
+                </select>
+            </div>
+        </div>
+
+
+        <button class="btn" id="update-btn">UPDATE PRODUCT</button>
     </div>
     <script type="text/javascript" src="QuanLy.js"> </script>
 </body>
