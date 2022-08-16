@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border:none;
+    outline: none;
+}
+h1{
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 20px;
+}
+.btn{
+    padding: 20px;
+    background-color:  #faa61a;
+    min-width: 500px;
+    border-radius:10px;
+    margin: 10px 600px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    font-weight:bold;
+}
+.btn:hover,
+.sub-btn:hover{
+    opacity: 50%;
+}

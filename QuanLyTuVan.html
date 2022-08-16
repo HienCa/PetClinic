@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/QuanLy.css">
+    <link rel="stylesheet" href="assets/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
+    <title>Quản lý Hồ Sơ Tư Vấn Khám</title>
+</head>
+
+<body>
+    <h1>QUẢN LÝ HỒ SƠ TƯ VẤN KHÁM</h1>
+    <button class="btn" id="btn">ADD</button>
+    <div class="container">
+        <table>
+            <tr class="table-col">
+                <th class="col-name">Mã</th>
+                <th class="col-name">MÃ BSTY</th>
+                <th class="col-name">MÃ KH</th>
+                <th class="col-name">NGÀY TƯ VẤN</th>
+                <th class="col-name">CHUẨN ĐOÁN</th>
+                <th class="col-name">ĐƠN THUỐC</th>
+                <th class="col-name">ACTIONS</th>
+
+            </tr>
+            <tr class="table-col">
+                <td class="row-item center">01</td>
+                <td class="row-item  center">10</td>
+                <td class="row-item  center">1</td>
+                <td class="row-item  center">16/08/2022</td>
+                <td class="row-item  center">đề kháng yếu</td>
+                <td class="row-item  center">Thuốc vitamin</td>
+                <td class="row-item  center">
+                    <form action="" method="post">
+                        <button class="sub-btn">UPDATE</button>
+                    </form>
+                    <button class="sub-btn" style="margin-top:10px;">DELETE</button>
+                </td>
+
+            </tr>
+            
+            <tr class="table-col">
+                <td class="row-item center">01</td>
+                <td class="row-item center">10</td>
+                <td class="row-item  center">1</td>
+                <td class="row-item  center">16/08/2022</td>
+                <td class="row-item  center">đề kháng yếu</td>
+                <td class="row-item  center">Thuốc vitamin</td>
+                <td class="row-item  center">
+                    <form action="" method="post">
+                        <button class="sub-btn">UPDATE</button>
+                    </form>
+                    <button class="sub-btn" style="margin-top:10px;">DELETE</button>
+                </td>
+
+            </tr>
+           
+            <tr class="table-col">
+                <td class="row-item center">01</td>
+                <td class="row-item center">10</td>
+                <td class="row-item  center">1</td>
+                <td class="row-item  center">16/08/2022</td>
+                <td class="row-item  center">đề kháng yếu</td>
+                <td class="row-item  center">Thuốc vitamin</td>
+                <td class="row-item  center">
+                    <form action="" method="post">
+                        <button class="sub-btn">UPDATE</button>
+                    </form>
+                    <button class="sub-btn" style="margin-top:10px;">DELETE</button>
+                </td>
+
+            </tr>
+            
+
+
+        </table>
+
+
+    </div>
+    <div class="add-product" id="add-product">
+        <form action="#" method="post">
+
+        </form>
+        <div class="content">
+            <div class="item">
+                <input class="input-style" placeholder="Mã Bác Sĩ Thú Y" name="MaBSTY"></input>
+                
+                <input class="input-style" placeholder="Mã Khách Hàng" name="MaKH"></input>
+                <input class="input-style" placeholder="Mã Pet" name="MaPet"></input>
+               
+
+            </div>
+            <div class="item">
+                <input class="input-style" type="date" id="getDate" placeholder="Ngày Khám" name="ngaytuvankham"></input>
+                <input class="input-style" placeholder="Mô tả chi tiết loại bệnh" name="loaibenh"></input>
+                <input class="input-style" placeholder="Đơn Thuốc" name="donthuoc"></input>
+                
+            </div>
+        </div>
+        
+
+        <button class="btn" id="sub-btn">ADD RECORD</button>
+    </div>
+    <script type="text/javascript" src="QuanLy.js"> </script>
+</body>
+
+</html>
