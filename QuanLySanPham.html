@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/QuanLy.css">
+    <link rel="stylesheet" href="assets/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
+    <title>Quản lý sản phẩm</title>
+</head>
+
+<body>
+    <h1>QUẢN LÝ SẢN PHẨM</h1>
+    <button class="btn" id="btn">ADD</button>
+    <div class="container">
+        <table>
+            <tr class="table-col">
+                <th class="col-name">Mã</th>
+                <th class="col-name">TÊN SẢN PHẨM</th>
+                <th class="col-name">Hình ẢNH</th>
+                <th class="col-name">DVT</th>
+                <th class="col-name">ĐƠN GIÁ</th>
+                <th class="col-name">SỐ LƯỢNG</th>
+                <th class="col-name">ACTIONS</th>
+
+            </tr>
+            <tr class="table-col">
+                <td class="row-item center">01</td>
+                <td class="row-item">Túi đựng pet</td>
+                <td class="row-item  center"><img src="images/balophihanhgia.webp" alt=""></td>
+                <td class="row-item  center">Cái</td>
+                <td class="row-item  center">200.000 đ</td>
+                <td class="row-item  center">1000</td>
+                <td class="row-item  center">
+                    <form action="" method="post">
+                        <button class="sub-btn">UPDATE</button>
+                    </form>
+                    <button class="sub-btn" style="margin-top:10px;">DELETE</button>
+                </td>
+
+            </tr>
+            <tr class="table-col">
+                <td class="row-item center">01</td>
+                <td class="row-item">Túi đựng pet</td>
+                <td class="row-item  center"><img src="images/balophihanhgia.webp" alt=""></td>
+                <td class="row-item  center">Cái</td>
+                <td class="row-item  center">200.000 đ</td>
+                <td class="row-item  center">1000</td>
+                <td class="row-item  center">
+                    <button class="sub-btn">UPDATE</button>
+                    <button class="sub-btn" style="margin-top:10px;">DELETE</button>
+                </td>
+
+            </tr>
+            <tr class="table-col">
+                <td class="row-item center">01</td>
+                <td class="row-item">Túi đựng pet</td>
+                <td class="row-item  center"><img src="images/balophihanhgia.webp" alt=""></td>
+                <td class="row-item  center">Cái</td>
+                <td class="row-item  center">200.000 đ</td>
+                <td class="row-item  center">1000</td>
+                <td class="row-item  center">
+                    <button class="sub-btn">UPDATE</button>
+                    <button class="sub-btn" style="margin-top:10px;">DELETE</button>
+                </td>
+
+            </tr>
+            <tr class="table-col">
+                <td class="row-item center">01</td>
+                <td class="row-item">Túi đựng pet</td>
+                <td class="row-item  center"><img src="images/balophihanhgia.webp" alt=""></td>
+                <td class="row-item  center">Cái</td>
+                <td class="row-item  center">200.000 đ</td>
+                <td class="row-item  center">1000</td>
+                <td class="row-item  center">
+                    <button class="sub-btn">UPDATE</button>
+                    <button class="sub-btn" style="margin-top:10px;">DELETE</button>
+                </td>
+
+            </tr>
+
+            <tr class="table-col">
+                <td class="row-item center">01</td>
+                <td class="row-item">Túi đựng pet</td>
+                <td class="row-item  center"><img src="images/balophihanhgia.webp" alt=""></td>
+                <td class="row-item  center">Cái</td>
+                <td class="row-item  center">200.000 đ</td>
+                <td class="row-item  center">1000</td>
+                <td class="row-item  center">
+                    <button class="sub-btn">UPDATE</button>
+                    <button class="sub-btn" style="margin-top:10px;">DELETE</button>
+                </td>
+
+            </tr>
+
+
+        </table>
+
+
+    </div>
+    <div class="add-product" id="add-product">
+        <form action="#" method="post">
+
+        </form>
+        <div class="content">
+            <div class="item">
+                <input class="input-style" placeholder="Tên Sản Phẩm" name="tensp"></input>
+                <select class="input-style" name="dvt" id="">
+                    <option value="" style="font-weight:900">ĐƠN VỊ TÍNH</option>
+                    <option value="1">Cái / Bịch</option>
+                    <option value="2">Thùng</option>
+                    <option value="3">Hộp</option>
+                    <option value="4">Liều uống</option>
+
+                </select>
+                <input class="input-style" placeholder="GIÁ" name="gia"></input>
+                <input class="input-style" type="file" placeholder="Hình ảnh" name="image"></input>
+               
+
+            </div>
+            <div class="item">
+                <input class="input-style" placeholder="Số Lượng" name="soluong"></input>
+                <input class="input-style" placeholder="Mô Tả" name="mota"></input>
+                <input class="input-style" placeholder="Nước Sản Xuất" name="nuocsx"></input>
+                <select class="input-style" name="maloai" id="">
+                    <option value="" style="font-weight:900">CHỌN LOẠI SẢN PHẨM</option>
+                    <option value="1">Thức Ăn</option>
+                    <option value="2">Túi đựng Pet</option>
+                    <option value="3">Thuốc</option>
+                    <option value="4">Đồ chơi cho Pet</option>
+
+                </select>
+            </div>
+        </div>
+        
+
+        <button class="btn" id="sub-btn">ADD PRODUCT</button>
+    </div>
+    <script type="text/javascript" src="QuanLy.js"> </script>
+</body>
+
+</html>
