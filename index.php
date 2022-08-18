@@ -7,7 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets/grid.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+  
+
 
   <title>Pet Clinic</title>
 </head>
@@ -41,7 +44,11 @@
     <div class="advise">
       <h2>TƯ VẤN & CHUẨN ĐOÁN BỆNH</h2>
       <p class="text">Tư vấn & Chẩn đoán ngay tình trạng sức khỏe nhanh cho Boss qua Video Call</p>
-
+      <?php
+      // echo"
+      // <div class="advise">.<h2>TƯ VẤN & CHUẨN ĐOÁN BỆNH</h2>.<p class="text">Tư vấn & Chẩn đoán ngay tình trạng sức khỏe nhanh cho Boss qua Video Call</p>"
+      // 
+      ?>
       <div class="diseases">
         <div class="diseases-item">
           <h3 class="diseases-item-title"><i class="fa-solid fa-egg icon"></i></i>Sinh sản</h3>
@@ -268,10 +275,37 @@
                 </select>
               </div>
 
-              <textarea name="note" id="note" cols="80" rows="10" class="info"
-                placeholder="Lý do khám, tình trạng thú cưng của bạn"></textarea>
-              <button class="btn" type="submit" value="Submit">Gửi thông tin</button>
+              <textarea name="note" id="note" cols="80" rows="10" class="info" placeholder="Lý do khám, tình trạng thú cưng của bạn"></textarea>
+              <button class="btn" id="petInfo">Thông tin Pet</button>
+              <div class="add-petInfo " id="add-petInfo">
+                
+                <div class="content">
+                  <div class="item">
+                    <input class="input-style" placeholder="Tên thường gọi của Pet" name="tenpet"></input>
+                    <select class="input-style" name="gioitinh" id="">
+                      <option value="" style="font-weight:900">Giới Tính</option>
+                      <option value="M">Male</option>
+                      <option value="F">FeMale</option>
+                      
+                    </select>
+                    <input class="input-style" placeholder="Độ tuổi của Pet (Khoảng bao nhiêu tháng/năm tuổi)" name="tuoi"></input>
+                    <input class="input-style" type="file" placeholder="Cân nặng" name="CanNang"></input>
+
+
+                  </div>
+                  <div class="item">
+                    <input class="input-style" placeholder="Chủng loại" name="ChungLoai"></input>
+                    <input class="input-style" placeholder="Cân nặng" name="CanNang"></input>
+                    
+                    
+                  </div>
+                </div>
+
+
+                <button class="btn" id="add-btn">ADD PET INFOMATION</button>
+              </div>
             </form>
+
           </div>
         </div>
       </div>
@@ -333,8 +367,7 @@
         <h3>FOLLOW US</h3>
         <div class="info-cty">
           <div class="footer-info-detail" style="margin:8px">
-            <i class="fab fa-facebook icon-width" style="min-width: 30px"></i><a
-              href="https://www.facebook.com/nguyenvanhien0506/"></i>Facebook</a>
+            <i class="fab fa-facebook icon-width" style="min-width: 30px"></i><a href="https://www.facebook.com/nguyenvanhien0506/"></i>Facebook</a>
           </div>
 
           <div class="footer-info-detail" style="margin:8px">

@@ -98,3 +98,13 @@ th{
 .active{
     display: block;
 }
+.icon-search{
+    background-color: #faa61a;
+    padding:20px;
+}
+.input-search{
+    min-width:400px;
+    border:1px solid #faa61a;
+    padding:20px;
+    margin-left: 20px;
+}

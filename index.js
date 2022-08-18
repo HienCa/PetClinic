@@ -6,33 +6,33 @@ var dateToday = function () {
 }
 dateToday();
 
-var form = document.getElementById("form");
-var validateForm = function () {
-   var name = document.myForm.name;
-   var tel = document.myForm.tel;
-   var note = document.myForm.note;
-   if (name.value == "" || isNumber(name.value)) {
-      name.setAttribute("placeholder", "Please provide your name");
-      name.focus();
-      name.style.border = "2px solid red";
-      return false;
-   }
+// var form = document.getElementById("form");
+// var validateForm = function () {
+//    var name = document.myForm.name;
+//    var tel = document.myForm.tel;
+//    var note = document.myForm.note;
+//    if (name.value == "" || isNumber(name.value)) {
+//       name.setAttribute("placeholder", "Please provide your name");
+//       name.focus();
+//       name.style.border = "2px solid red";
+//       return false;
+//    }
 
-   if (tel.value == "" || isNaN(tel.value) || tel.value.length < 10) {
-      showError("Please provide exactly tel.");
-      //tel.style.border = "2px solid red";
-      tel.focus();
-      return false;
-   }
-   if (note.value == "") {
-      alert("Please provide your pet'health!");
-      //note.style.border = "2px solid red";
-      note.focus();
-      return false;
-   }
-   return (true);
+//    if (tel.value == "" || isNaN(tel.value) || tel.value.length < 10) {
+//       showError("Please provide exactly tel.");
+//       //tel.style.border = "2px solid red";
+//       tel.focus();
+//       return false;
+//    }
+//    if (note.value == "") {
+//       alert("Please provide your pet'health!");
+//       //note.style.border = "2px solid red";
+//       note.focus();
+//       return false;
+//    }
+//    return (true);
 
-}
+// }
 checkOnchange = function () {
    var inputName = document.getElementById("name");
    inputName.onchange = function () {
@@ -43,7 +43,19 @@ checkOnchange = function () {
       }
    }
 }
+const petInfo = document.getElementById("petInfo");
+const add_petInfo = document.getElementById("add-petInfo");
 
+petInfo.addEventListener("click", checkClickPetInfo)
+
+function checkClickPetInfo() {
+   if (add_petInfo.classList.contains("active")) {
+      add_petInfo.classList.remove("active");
+   }
+   else {
+      add_petInfo.classList.add("active");
+   }
+}
 
 function checkClick() {
    if (boxchat.classList.contains("active")) {
